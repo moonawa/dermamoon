@@ -1,0 +1,22 @@
+php artisan make:migration create_medecin_table
+php artisan make:model Medecin
+
+php artisan make:migration create_role_table
+php artisan make:model Role
+
+php artisan make:migration create_patient_table
+php artisan make:model Patient
+
+
+php artisan make:migration create_role_users_table
+php artisan make:migration create_medecin_patient_table
+
+php artisan make:model Ordonnance --migration
+php artisan make:migration create_medecin_ordonnance_table
+
+php artisan make:model Rv --migration
+php artisan make:migration create_medecin_rv_table
+
+\Carbon\Carbon::setToStringFormat('d-m-Y H:i:s');
+
+
